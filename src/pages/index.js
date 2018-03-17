@@ -62,8 +62,7 @@ const App = ({data}) => {
               <h2 className="with-label with-label__white">Watch This</h2>
             </div>
           </div>
-          <div className="row">
-            {console.log(data)}
+          <div className="row margin-top__sm">
             {data.allContentfulHomepageVideos.edges.map((video, i) => {
               return (
                 <div className="col-6" key={i}>
