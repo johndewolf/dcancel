@@ -1,0 +1,78 @@
+.section-padding {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @media (min-width: 768px) {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+}
+.section-padding__top {
+  padding-top: 80px;
+
+  @media (min-width: 768px) {
+    padding-top: 160px;
+  }
+}
+.section-padding__bottom {
+  padding-top: 80px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 160px;
+  }
+}
+.section-padding__sm {
+  padding-top: 45px;
+  padding-bottom: 45px;
+
+  @media (min-width: 768px) {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+.margin-none {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.margin-top {
+  margin-top: 100px !important;
+}
+.margin-top__sm {
+  margin-top: 40px !important;
+}
+.margin-top__none {
+  margin-top: 0;
+}
+.margin-bottom__sm {
+  margin-bottom: 40px !important;
+}
+.margin-bottom__sm {
+  margin-bottom: 40px !important;
+}
+.margin-bottom__none {
+  margin-bottom: 0 !important;
+}
+.margin-left__auto {
+  margin-left: auto;
+  display: block;
+}
+.margin-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block
+}
+
+img, svg {
+  max-width: 100%;
+}
+
+.shadow-bottom {
+  -moz-box-shadow: inset 0px -30px 30px rgba(213,213,213,.58);
+  -webkit-box-shadow: inset 0px -30px 30px rgba(213,213,213,.58);
+  box-shadow: inset 0px -30px 30px rgba(213,213,213,.58);
+}
+.shadow-top {
+  -moz-box-shadow: inset 0 0 10px rgba(213,213,213,.58);
+  -webkit-box-shadow: inset 0 0 10px rgba(213,213,213,.58);
+  box-shadow: inset 0px 30px 30px rgba(213,213,213,.58);
+}

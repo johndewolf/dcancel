@@ -1,0 +1,168 @@
+.btn {
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 14px 20px 10px;
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  border-radius: 0;
+  font-family: "proxima-nova", sans-serif;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $primary;
+    color: white;
+    -webkit-transition: background-color ease-in-out 250ms, color ease-in-out 250ms, border ease-in-out 250ms;
+    transition: background-color ease-in-out 250ms, color ease-in-out 250ms, border ease-in-out 250ms;
+    text-decoration: none;
+  }
+}
+
+.btn.black {
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+  position: relative;
+
+  &:hover, &:active, &:focus {
+    background-color: white;
+    border: 2px solid $primary;
+    color: black;
+  }
+}
+.btn.black i {
+  color: white;
+  transition: background-color ease-in-out 250ms, color ease-in-out 250ms;
+
+  &:hover i {
+    color: black;
+  }
+}
+
+.btn.ghost-black {
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 0;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+  }
+}
+.btn.ghost-white {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+
+  &:hover, &:active, &:focus {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  }
+}
+.btn.blue {
+  background: $blue;
+  color: white;
+  border: 2px solid $blue;
+  &:hover {
+    border: 2px solid $blue;
+    background-color: white;
+    color: $blue;
+  }
+}
+.btn.black.bolt {
+  padding: 14px 44px 10px 20px;
+}
+.btn.black.bolt:after {
+  content: "";
+  background-image: url(/assets/img/bolt-white.svg);
+  height: 26px;
+  width: 13px;
+  position: absolute;
+  display: inline-block;
+  top: 6px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 20px;
+  -webkit-transition: background-image ease-in-out 250ms, color ease-in-out 250ms;
+  transition: background-image ease-in-out 250ms, color ease-in-out 250ms;
+}
+.btn.black.bolt:hover:after {
+  content: "";
+  background-image: url(/assets/img/bolt-black.svg);
+  height: 26px;
+  width: 13px;
+  position: absolute;
+  display: inline-block;
+  top: 6px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 20px;
+}
+a.link-icon {
+  font-family: "proxima-nova", sans-serif;
+  color: $primary;
+  position: relative;
+  display: inline-block;
+  margin-right: 40px;
+  font-weight: 800;
+  &:hover {
+    color: black;
+    text-decoration: underline;
+  }
+}
+
+
+
+a.link-icon__play:before {
+  position: relative;
+  content: '';
+  width: 38px;
+  height: 38px;
+  background-image: url(/assets/img/icon-play.svg);
+  display: inline-block;
+  top: 14px;
+  margin-right: 12px;
+  transition: background-image ease-in-out 250ms;
+}
+
+a.link-icon__play:hover:before {
+  position: relative;
+  content: '';
+  width: 38px;
+  height: 38px;
+  background-image: url(/assets/img/icon-play-white.svg);
+  display: inline-block;
+  top: 14px;
+  margin-right: 12px;
+}
+
+a.link-icon__arrow:after {
+  position: absolute;
+  content: '';
+  width: 6px;
+  height: 10px;
+  background-image: url(/assets/img/icon-arrow.svg);
+  display: inline-block;
+  top: 10px;
+  background-size: cover;
+  margin-left: 12px;
+  transition: margin-left ease-in-out 250ms;
+}
+
+a.link-icon__arrow:hover:after {
+  margin-left: 16px;
+}

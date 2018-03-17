@@ -1,0 +1,58 @@
+.bg-gray {
+  background-color: #F4F4F4;
+}
+.bg-white {
+  background-color: white;
+}
+.bg-black {
+  background-color: #111111;
+  color: white;
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  li,
+  {
+    color: white;
+  }
+  a:hover {
+    color: #43a6fa;
+  }
+}
+.bg-gradient__gray-vertical {
+  background-color: #F4F4F4;
+
+  @media (min-width: 768px) {
+    .bg-gradient__gray-vertical {
+      background-color: #F4F4F4;
+      background: linear-gradient(#F4F4F4, white);
+    }
+  }
+}
+
+.bg-gradient {
+  background-image: -webkit-gradient(linear,right top,left top,from(#1fbfd5),to(#5136cc));
+  background-image: -webkit-linear-gradient(right,#1fbfd5,#5136cc);
+  background-image: -o-linear-gradient(right,#1fbfd5 0,#5136cc 100%);
+  background-image: linear-gradient(270deg,#1fbfd5,#5136cc);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: contain;
+  background-blend-mode: multiply;
+}
+
+.bg-dark {
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  li,
+  {
+    color: white;
+  }
+  a:hover {
+    color: #43a6fa;
+  }
+}

@@ -1,0 +1,74 @@
+
+@font-face {
+  font-family: HaloHandletter;
+  src: url("./fonts/HaloHandletter.otf") format("opentype");
+}
+body {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: $primary;
+}
+
+p, li {
+  font-family: Merriweather-Light, Helvetica;
+  font-size: 18px;
+  color: $primary;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.bold {
+  font-weight: 800;
+}
+.light {
+  font-weight: 100;
+}
+h1 {
+  font-size: 40px;
+  letter-spacing: -1px;
+  line-height: 38px;
+  font-weight: 800;
+
+
+  @media (min-width: 768px) {
+    font-size: 64px;
+    line-height: 58px;
+  }
+}
+
+h2 {
+  font-size: 35px;
+  letter-spacing: -0.75px;
+  line-height: 35px;
+  font-weight: 800;
+
+  @media (min-width: 768px) {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
+}
+a {
+  color: $blue;
+}
+.text-center {
+  text-align: center;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.text-right {
+  text-align: right;
+}

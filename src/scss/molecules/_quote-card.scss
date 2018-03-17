@@ -1,0 +1,48 @@
+blockquote.quote-card {
+  border: 1px solid #D5D5D5;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.05);
+  border-radius: 4px;
+  padding: 20px;
+  @media (min-width: 768px) {
+    padding: 30px 60px 50px 120px !important;
+    background-image: url(/assets/img/icon-quotations.svg);
+    background-repeat: no-repeat;
+    background-position: 64px 36px;
+  }
+  .quote {
+    font-weight: bold;
+  }
+
+  .quote-body {
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 40px;
+  }
+  .quote-source-name {
+    font-family: HaloHandletter, Helvetica;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 36px;
+    line-height: 1;
+  }
+  .quote-source-title {
+    font-family: "proxima-nova", Helvetica;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .quote-thumbnail {
+    border-radius: 50%;
+  }
+  @media screen and (max-width: 767px) {
+    .quote-source-title {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .quote-source-name {
+      font-size: 48px;
+    }
+  }
+
+}

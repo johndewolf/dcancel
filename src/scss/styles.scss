@@ -1,0 +1,176 @@
+//VENDOR
+// Bootstrap Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+// Bootstrap Optional
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/code";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/utilities/display";
+@import "node_modules/bootstrap/scss/utilities/flex";
+
+@import 'atoms/_colors';
+@import 'atoms/_buttons';
+@import 'atoms/_typography';
+@import 'atoms/_utility';
+@import 'molecules/_quote-card';
+@import 'templates/_sections';
+
+
+.with-label {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 4px 2px;
+}
+.with-label__white {
+  background-color: white;
+  color: #222222 !important;
+}
+.with-label__black {
+  background-color: #222222;
+  color: white !important;
+}
+.bg-hero {
+  background-image: url('~/img/bg-hero.png');
+}
+.hero-section {
+  min-height: 75vh;
+  position: relative;
+}
+.hero-quote {
+  font-size: 36px;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+.dc-hero {
+  display: block;
+  bottom: 0;
+  position: relative;
+  padding: 0 20px;
+  @media (min-width: 768px) {
+    margin-left: auto;
+    padding: 0;
+    position: absolute;
+    right: 10%;
+    height: 65vh;
+
+  }
+}
+.hero-quote-name {
+  color: white;
+  font-family: HaloHandletter;
+  font-size: 64px;
+}
+.hero-section {
+  background-color: #111111;
+  background-image: url(../img/DSC_7718.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.video-title {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+#podcast {
+  background-image: url(../img/bg-podcast.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+}
+.podcast-banner {
+  background: #FFFFFF;
+  @media (min-width: 992px) {
+    display: flex;
+    align-items: center;
+
+  }
+
+}
+.podcast-cover img {
+  display: block;
+  margin: 0 auto;
+}
+.podcast-text {
+  font-size: 36px;
+  padding: 24px 16px;
+}
+.btn.yellow {
+  background-color: #F8E71C;
+  color: #111111;
+  &:hover {
+    color: white;
+    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.15);
+  }
+}
+.book-cover {
+  max-height: 250px;
+}
+.book-title {
+  font-size: 14px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+.btn.btn__sm {
+    font-size: 14px;
+    padding: 8px 12px 6px;
+}
+.logo-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  .publication-logo {
+    padding: 40px;
+    margin: 0 auto;
+  }
+}
+footer {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  .social-link {
+    display: inline-block;
+    margin-right: 16px;
+  }
+  .footer-links {
+    margin-top: 24px;
+    @media (min-width: 768px) {
+      text-align: right;
+      margin-top: 0;
+    }
+  }
+  .footer-link {
+    @media (min-width: 768px) {
+      margin-left: 32px;
+      margin-right: 0;
+    }
+    margin-right: 18px;
+    font-weight: 800;
+    font-size: 17px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+  }
+}
+.navigation {
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+nav {
+  text-align: right;
+
+  a {
+    font-weight: 800;
+    color: white;
+    display: inline-block;
+    margin-left: 16px;
+    @media (min-width: 768px) {
+      margin-left: 32px;
+    }
+  }
+}
