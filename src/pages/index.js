@@ -16,8 +16,15 @@ import techcrunch from '../img/techcrunch.png'
 import hbr from '../img/hbr.png'
 import entrepreneur from '../img/entrepreneur.png'
 import '../scss/styles.scss'
-
+import smoothScroll from 'smoothscroll'
 const App = ({data}) => {
+  let handleAnchorClick = function(e) {
+    e.preventDefault()
+    let sectionId = e.target.href.split("#")[1];
+    const targetEl = document.getElementById(sectionId)
+    smoothScroll(targetEl)
+
+  }
 
   return (
     <div>
@@ -29,9 +36,9 @@ const App = ({data}) => {
             </div>
             <div className="col-10">
               <nav>
-                <a href="#talks" className="footer-link">Videos</a>
-                <a href="#talks" className="footer-link">Podcast</a>
-                <a href="#talks" className="footer-link">Recommended Books</a>
+                <a href="#videos" onClick={handleAnchorClick}>Videos</a>
+                <a href="#podcast" onClick={handleAnchorClick}>Podcast</a>
+                <a href="#books" onClick={handleAnchorClick}>Recommended Books</a>
               </nav>
             </div>
           </div>
@@ -48,7 +55,7 @@ const App = ({data}) => {
         </div>
         <img src={davidCancel} className="dc-hero"/>
       </section>
-      <section className="section-padding bg-black">
+      <section className="section-padding bg-black" id="videos">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -105,7 +112,7 @@ const App = ({data}) => {
           </div>
         </div>
       </section>
-      <section className="section-padding container">
+      <section className="section-padding container" id="books">
         <h2 className="with-label with-label__black">RECOMMENDED READING</h2>
         <div className="row">
         {data.allContentfulHomepageBooks.edges.map((book, i) => {
@@ -146,9 +153,10 @@ const App = ({data}) => {
               </div>
             </div>
             <div className="col-md-6 footer-links">
-              <a href="#talks" className="footer-link">Videos</a>
-              <a href="#talks" className="footer-link">Podcast</a>
-              <a href="#talks" className="footer-link">Recommended Books</a>
+              <a href="#videos" className="footer-link" onClick={handleAnchorClick}>Videos</a>
+              <a href="#podcast" className="footer-link" onClick={handleAnchorClick}>Podcast</a>
+              <a href="#books" className="footer-link" onClick={handleAnchorClick}>Recommended Books</a>
+
             </div>
           </div>
 
